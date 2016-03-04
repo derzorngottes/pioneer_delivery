@@ -1,0 +1,87 @@
+html {
+  background-image: url(index-bg.jpg);
+  background-size: 130%;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+#nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 800px;
+    text-align: left;
+    height: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    margin: 0;
+    background: rgba(255,255,255,0.5);
+}
+
+#nav li {
+  display: inline;
+  font-size: 20px;
+  font-weight: lighter;
+  color: darkgrey;
+}
+
+.jumbotron {
+  padding: 40px;
+  margin-top: 170px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.button {
+  margin-top: 80px;
+  text-align: center;
+}
+
+button {
+  background: rgba(4,174,145,1);
+  font-size: 18px;
+  font-weight: bolder;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.annotation {
+  position: absolute;
+  bottom: 40px;
+  background-color: white;
+  left: 0;
+  right: 0;
+}
+
+.an-block h2 {
+  font-size: 16px;
+}
+
+.an-block {
+  width: 30%;
+  padding: 5px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
