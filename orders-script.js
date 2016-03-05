@@ -44,6 +44,7 @@ $(document).ready(function(){
     curPrice = menuArr2[foodId].price;
     $('#numItems').val(1);
     prevId = tempId;
+    $('#numItems').focus();
   });
 
   $('#addButton').click(function(){
@@ -79,10 +80,10 @@ $(document).ready(function(){
       data: order,
       success: function() {
         console.log('success');
-        alert('completed');
+        alert('Order successfully placed! Sit tight!');
       },
       error: function(xhr, status, error){
-        console.log('error');
+        console.log('Error: order not placed. Please try again later.');
       }
     });
   });
