@@ -29,6 +29,93 @@ html {
   color: darkgrey;
 }
 
+.left-side {
+  display: inline-block;
+  float:left;
+  width: 40%;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+.menu {
+  box-sizing: border-box;
+  height: 300px;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  overflow-x: hidden;
+}
+
+.titles {
+  display: inline-block;
+  float:left;
+  width: 60%;
+  margin-left: 10%;
+}
+.prices {
+  display: inline-block;
+  float: right;
+  width: 20%;
+  margin-right: 3%;
+}
+
+.order-form {
+  padding: 2%;
+}
+
+label {
+  color: white;
+  font-size: 18px;
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}
+
+#deliverButton {
+  margin-left: 32%;
+  margin-top: 3%;
+}
+
+.right-side {
+  display: inline-block;
+  float: right;
+  width: 40%;
+  height: 550px;
+  margin-right: 60px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 50px;
+}
+
+.sumUp {
+  display: inline-block;
+  float: left;
+  width: 200px;
+  padding: 10%;
+  height: 300px;
+}
+
+.listPrice {
+  float: right;
+  display: inline-block;
+  width: 80px;
+  padding: 10%;
+  height: 300px;
+}
+
+.nameTotals {
+  float: left;
+  display: inline-block;
+  width: 100px;
+  padding: 2% 0% 2% 10%;
+}
+
+.showPrices {
+  display: inline-block;
+  float:right;
+  width: 200px;
+  padding: 2% 10% 2% 0%;
+}
+
 .footer {
   background-color: black;
   position: fixed;

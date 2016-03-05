@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Galvanize Eats - Order Page</title>
-    <link type = 'text/css' rel='stylesheet' href='orders-style.css'>
   </head>
   <body>
     <nav>
@@ -14,18 +13,55 @@
       </div>
     </nav>
     <div class="container">
-      <!-- these go side by side -->
-      <div class="order-form">
-        <form class="order-form" action="index.html" method="post">
-
-        </form>
+      <div class="left-side">
+        <div class="menu">
+          <div class = 'titles'></div>
+          <div class="prices"></div>
+        </div>
+        <div class="order-form">
+          <form class="order-form" action="#" method="post">
+            <label for='numberItems'>Number:</label>
+            <input type = 'number' name='numberItems' id='numItems' style='width:20px'>
+            <button type="button" name="add" id='addButton'>add item</button>
+            <br/><br/>
+            <label for="name">Name:</label>
+            <input type='name' name='name'><br/><br/>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone"><br/><br/>
+            <label for="address">Address:</label>
+            <input type="text" name="address"><br/>
+            <button type="button" name="deliver" id='deliverButton'>deliver it!</button>
+          </form>
+        </div>
       </div>
-      <div class='tally'>
-
+      <div class="right-side">
+        <div class='tally'>
+          <div class="sumUp">
+          </div>
+          <div class="listPrice">
+          </div>
+          <div class="nameTotals">
+            <p>Subtotal: </p>
+            <p>Tax: </p>
+            <p>Total: </p>
+          </div>
+          <div class="showPrices">
+            <p id='showSubtotal'>
+            </p>
+            <p id='showTax'>
+            </p>
+            <p id='showTotal'>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="footer">
       Galvanize, 2015 + Seattle, Washington
     </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src='orders-script.js'></script>
+  <link type = 'text/css' rel='stylesheet' href='orders-style.css'>
   </body>
 </html>
