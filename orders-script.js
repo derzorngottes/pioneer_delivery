@@ -22,6 +22,21 @@ $(document).ready(function(){
   function printMenu(data){
     var menuArr = $.map(data, function(el){return el});
     menuArr2 = menuArr;
+    $('.titles').append('<p class="headers">Burgers</p>');
+    $('.prices').append('<p class="headers">&nbsp;</p>')
+    for(var j = 0; j < menuArr.length; j++) {
+      if(menuArr[j].type === 'burger') {
+        $('.titles').append('<p id="title' + j + '"></p>');
+        var thisTitle = '#title' + j;
+        $(thisTitle).text(menuArr[j].name);
+
+        $('.prices').append('<p id="price' + j + '"></p>');
+        var thisPrice = '#price' + j;
+        $(thisPrice).text(menuArr[j].price);
+      }
+    }
+    $('.titles').append('<p class="headers">Pizza</p>');
+    $('.prices').append('<p class="headers">&nbsp;</p>');
     for(var i = 0; i < menuArr.length; i++){
       $('.titles').append('<p id="title' + i + '"></p>');
       var thisTitle = '#title' + i;

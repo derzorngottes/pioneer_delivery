@@ -19,14 +19,15 @@ html {
     padding: 10px;
     padding-left: 20px;
     margin: 0;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.7);
 }
 
 #nav li {
   display: inline;
   font-size: 20px;
   font-weight: lighter;
-  color: darkgrey;
+  padding-left: 100px;
+  color: rgba(40,40,40,0.9);
 }
 
 .left-side {
@@ -42,8 +43,13 @@ html {
   height: 300px;
   width: 100%;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.85);
   overflow-x: hidden;
+}
+
+.headers {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .titles {
@@ -51,16 +57,17 @@ html {
   float:left;
   width: 60%;
   margin-left: 10%;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: lighter;
 }
 .prices {
   display: inline-block;
   float: right;
   width: 20%;
-  margin-right: 3%;
-  font-size: 18px;
+  margin-right: 8%;
+  font-size: 16px;
   font-weight: lighter;
+  text-align: right;
 }
 
 .order-form {
@@ -105,7 +112,7 @@ label {
   width: 40%;
   height: 550px;
   margin-right: 60px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.85);
   margin-top: 50px;
 }
 
