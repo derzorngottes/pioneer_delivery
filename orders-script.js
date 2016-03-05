@@ -8,6 +8,7 @@ $(document).ready(function(){
   var count = 0;
   var order = {};
   var orderFoods = {};
+  var prevId = '';
 
   $.ajax({
     url: 'https://galvanize-eats-api.herokuapp.com/menu',
@@ -33,14 +34,16 @@ $(document).ready(function(){
   }
 
   $('.titles').click(function(){
-    $()
+    console.log(prevId);
+    $(prevId).css('background-color', '');
     var foodId = (event.target.id).substr(event.target.id.length - 1);
     var tempId = '#' + event.target.id;
-    $(tempId).css('background-color', 'blue');
+    $(tempId).css('background-color', 'lightgrey');
     curItem = $(event.target).text();
     foodId = parseInt(foodId);
     curPrice = menuArr2[foodId].price;
     $('#numItems').val(1);
+    prevId = tempId;
   });
 
   $('#addButton').click(function(){
